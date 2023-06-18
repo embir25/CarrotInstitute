@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Movie Search</title>
+    <link rel="stylesheet" type="text/css" href="app.css">
+</head>
+
+<body>
+    <header>
+        <h3>Movie Search</h3>
+        <div id="search-container">
+            <input type="text" id="search-input" placeholder="Enter movie title...">
+            <button id="search-button">Search</button>
+        </div>
+    </header>
+<main>
+    <div id="sort-container" style="padding:20px">
+        <button id="sort-title-button" style="padding: 10px; background-color: white; border: 1px solid rgb(203, 200, 200); border-radius: 10px; cursor: pointer;">Sort by Title</button>
+        <button id="sort-rating-button" style="padding: 10px; background-color: white; border: 1px solid rgb(203, 200, 200); border-radius: 10px; cursor: pointer;">Sort by Rating</button>
+    </div>
+    <div id="loading-spinner" class="loading-spinner"></div>
+      <div id="results-container"></div>
+      <div id="pagination-container"></div>
+      <div id="details-modal" class="modal">
+        <div class="modal-content">
+          <span class="close-button">&times;</span>
+          <div id="details-content"></div>
+        </div>
+      </div>
+</main>
+    <script src="server.js"></script>
+</body>
+
+</html>
